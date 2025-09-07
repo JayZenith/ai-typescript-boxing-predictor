@@ -45,6 +45,7 @@ uvicorn app:app --reload
 ```
 
 ### Frontend
+```bash
 # Navigate to frontend
 cd frontend
 
@@ -53,19 +54,20 @@ npm install
 
 # Start development server
 npm run dev
+```
 
 Frontend runs on http://localhost:3000
 
 Backend API runs on http://localhost:8000
 
 ## Architecture 
+```bash
 Frontend (React + TypeScript)
         ↓ REST API
 Backend (FastAPI + PyTorch)
         ↓ Model
 Model Weights (fight_model.pth)
-
-
+```
 
 ## Code Structure
 ```bash
