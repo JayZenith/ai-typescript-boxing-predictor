@@ -1,6 +1,6 @@
 # Boxing Fight Predictor
 
-A React/TypeScript application that predicts boxing match outcomes using a PyTorch neural network served via a FastAPI backend. Built as an educational project to learn ML concepts, client-server communication, and frontend integration.
+A React + TypeScript frontend predicting boxing match outcomes using a PyTorch neural network served via a FastAPI backend. Designed to demonstrate ML integration, client-server communication, and rapid frontend development.
 
 ![Boxing Predictor Demo](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Boxing+Predictor+Demo)
 
@@ -36,6 +36,10 @@ source venv/bin/activate  # Linux/macOS
 # Install dependencies
 pip install -r requirements.txt
 
+# Train or load model
+python train_model.py
+
+
 # Start FastAPI server
 uvicorn app:app --reload
 ```
@@ -55,7 +59,12 @@ Frontend runs on http://localhost:3000
 Backend API runs on http://localhost:8000
 
 ## Architecture 
-Frontend (React) <--> REST API (FastAPI) <--> PyTorch Model
+Frontend (React + TypeScript)
+        ↓ REST API
+Backend (FastAPI + PyTorch)
+        ↓ Model
+Model Weights (fight_model.pth)
+
 
 
 ## Code Structure
